@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-rows: 40% 20% 20% 20% ;
+    background-color: gray;
+    margin-bottom: 1em;
+}
+
+#pp{
+    grid-column: 1;
+    grid-row: 1;
+    width: 17.9em;
+    height: auto ;
+}
+
+#heade_titre{
+    grid-row: 1;
+    grid-column: span 2;
+    text-align: start;
+    font-size: 180%; 
+    font-family: sans-serif;
+    margin-top: 10vh;
+    margin-left: 5vh;
+ 
+}
+
+#info_email{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#info_email img{
+    width: 1.8em;
+    height: auto ; 
+}
+
+#info_phone{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#info_phone img{
+    width: 1.8em;
+    height: auto ; 
+}
+
+#info_adresse{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#info_adresse img{
+    width: 1.8em;
+    height: auto ; 
+}
+
+#info_Naiss{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#info_Naiss img{
+    width: 1.8em;
+    height: auto ; 
+}
+
+#info_linkedin{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#info_linkedin img{
+    width: 1.8em;
+    height: auto ; 
+}
+
+
+
+
+
