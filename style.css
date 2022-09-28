@@ -37,6 +37,8 @@ header section img{
     justify-self: start;
 }
 
+/*creation d'une grille pour les éléments du header */
+
 header section{
     display: grid;
     grid-template-columns: 10% 1fr;
@@ -47,6 +49,8 @@ header section{
     font-size: 90%;
     color: rgb(151, 155, 162);
 }
+
+/*organisation de tout les éléments dans le header*/
 
 #info_email{
     grid-row: 2
@@ -78,8 +82,10 @@ header section{
 #cote_gauche{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10% 1fr 10% 1fr;
+    grid-template-rows: 15% 5% 1fr 10% 1fr;
 }
+
+/*Partie du css demande de stage*/
 
 #Demande_de_Stage{
     display: grid;
@@ -100,6 +106,8 @@ header section{
     margin-right: 1.2em;
 }
 
+/* organisation du trait séparateur entre deux parties*/
+
 #trait_grid_gauche_1{
     grid-row: 2;
     grid-column: 1;
@@ -114,22 +122,54 @@ header section{
     border: none;
 }
 
+/*Partie du css de la formation*/
 
 #Formation{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7% 1fr 1fr 1fr;
+    grid-row: 3;
+    grid-column: 1;
+    font-family: Roboto, sans-serif;
+}
+
+#Formation h2{
+    grid-row: 1;
+    text-align: center;
+}
+
+#BUT_info{
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 16% 14% 14% 1fr 14%;
+    margin-bottom: 2em;
+}
+
+#date_but{
+    font-style: italic;
+}
+
+#lien_but{
+    font-weight: bold ;
+}
+
+#BUT_info a{
+    font-style: italic;
+    font-weight: bolder;
+    color: salmon;
+    
+}
+
+#Bac_Generale{
     grid-row: 3;
     grid-column: 1;
 }
 
-#trait_grid_gauche_2{
-    grid-row: 4;
-    grid-column: 1;
-}
 
-#Expérience_professionnelle{
-    grid-row: 5;
-    grid-column: 1;
 
-}
+
 
 
 @media(min-width:1000px){
