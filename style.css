@@ -327,31 +327,20 @@ version barre horizontale
     margin-bottom: 1.5em;
 }
 
-/*modif style bar de compétence métier pour travail d'équipe*/
-#trav_equipe_barre{
+/*modif style bar de compétence métier pour les compétences métiers*/
+#Metier section progress{
     width: 23em;
     height: 8px;
     -webkit-appearance:none;
 }
-#trav_equipe_barre::-webkit-progress-bar {
+#Metier section progress::-webkit-progress-bar {
     background-color: lightgray;
 }
-#trav_equipe_barre::-webkit-progress-value {
+#Metier section progress::-webkit-progress-value {
     background: salmon;
 }
 
-/*modif style bar de compétence métier pour designe et dvp web*/
-#Design_dvp_barre{
-    width: 23em;
-    height: 8px;
-    -webkit-appearance:none;
-}
-#Design_dvp_barre::-webkit-progress-bar {
-    background-color: lightgray;
-}
-#Design_dvp_barre::-webkit-progress-value {
-    background: salmon;
-}
+/*trait séparateur grille metier*/
 
 #trait_grid_droit_1{
     grid-row: 2;
@@ -367,9 +356,50 @@ version barre horizontale
     border: none;
 }
 
+#Sociale{
+    grid-row: 3;
+    grid-column: 1;
+    display: block;
+    font-family: Roboto, sans-serif;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
 
+#Sociale h2{
+    text-align: center;
+    margin-bottom: 0.8em;
+    text-decoration: underline;
+}
 
+#Sociale section progress{
+    width: 23em;
+    height: 8px;
+    -webkit-appearance:none;
+}
+#Sociale section progress::-webkit-progress-bar {
+    background-color: lightgray;
+}
+#Sociale section progress::-webkit-progress-value {
+    background: salmon;
+}
+ 
+#Sociale section{
+    margin-bottom: 1.1em;
+}
 
+#trait_grid_droit_2{
+    grid-row: 4;
+    grid-column: 1;
+    align-self: center;
+    background-color: black;
+    height: 3px;
+    width: 15em;
+    margin:auto;
+}
+
+#trait_grid_droit_2 hr{
+    border: none;
+}
 
 
 @media(min-width:768px){
