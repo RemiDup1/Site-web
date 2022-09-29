@@ -147,10 +147,6 @@ header section{
     
 }
 
-#BUT_info h3{
-    color: rgb(122, 92, 122);
-}
-
 #date_but{
     font-style: italic;
     text-align: end;
@@ -187,6 +183,14 @@ header section{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:25% 25% 25% 25%; 
+}
+
+#date_seconde{
+    text-align: end;
+}
+
+#lien_seconde{
+    font-weight: bold;
 }
 
 #trait_grid_gauche_2{
