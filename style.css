@@ -285,7 +285,6 @@ main{
     border: none;
 }
 
-
 /*
 version barre horizontale
     height:100vh;
@@ -296,6 +295,82 @@ version barre horizontale
     margin-left: 5em;
 
 */
+
+/*mise en place de la grille du coté droit*/
+
+#cote_droit{
+    grid-row: 3;
+    grid-column: 1;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 10% 20% 10% 20% 10% 20%;
+}
+
+/*partie métier*/
+
+#Metier{
+    grid-row: 1;
+    grid-column: 1;
+    display: block;
+    font-family: Roboto, sans-serif;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+#Metier h2{
+    text-align: center;
+    margin-bottom: 0.8em;
+    text-decoration: underline;
+}
+
+#travail_equipe{
+    margin-bottom: 1.5em;
+}
+
+/*modif style bar de compétence métier pour travail d'équipe*/
+#trav_equipe_barre{
+    width: 23em;
+    height: 8px;
+    -webkit-appearance:none;
+}
+#trav_equipe_barre::-webkit-progress-bar {
+    background-color: lightgray;
+}
+#trav_equipe_barre::-webkit-progress-value {
+    background: salmon;
+}
+
+/*modif style bar de compétence métier pour designe et dvp web*/
+#Design_dvp_barre{
+    width: 23em;
+    height: 8px;
+    -webkit-appearance:none;
+}
+#Design_dvp_barre::-webkit-progress-bar {
+    background-color: lightgray;
+}
+#Design_dvp_barre::-webkit-progress-value {
+    background: salmon;
+}
+
+#trait_grid_droit_1{
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    background-color: black;
+    height: 3px;
+    width: 15em;
+    margin:auto;
+}
+
+#trait_grid_droit_1 hr{
+    border: none;
+}
+
+
+
+
+
 
 @media(min-width:768px){
 
