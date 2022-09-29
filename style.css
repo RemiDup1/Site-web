@@ -303,7 +303,7 @@ version barre horizontale
     grid-column: 1;
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 10% 20% 10% 20% 10% 20%;
+    grid-template-rows: 20% 10% 20% 10% 12% 10% 20%;
 }
 
 /*partie métier*/
@@ -400,6 +400,50 @@ version barre horizontale
 #trait_grid_droit_2 hr{
     border: none;
 }
+
+#Langues{
+    grid-row: 5;
+    grid-column: 1;
+    display: block;
+    font-family: Roboto, sans-serif;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+#Langues h2{
+    text-align: center;
+}
+
+#Angl{
+    font-weight: bold;
+}
+
+#b1{
+    font-style: italic;
+}
+
+#Espa{
+    font-weight: bold;
+}
+
+#a1{
+    font-style: italic;
+}
+
+#trait_grid_droit_3{
+    grid-row: 6;
+    grid-column: 1;
+    align-self: center;
+    background-color: black;
+    height: 3px;
+    width: 15em;
+    margin:auto;
+}
+
+#trait_grid_droit_3 hr{
+    border: none;
+}
+
 
 
 @media(min-width:768px){
