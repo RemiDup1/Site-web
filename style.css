@@ -79,7 +79,15 @@ header section{
 
 /*CSS du main*/
 
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10% 1fr;
+}
+
 #cote_gauche{
+    grid-row: 1;
+    grid-column: 1;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 5% 1fr 10% 1fr;
@@ -127,6 +135,8 @@ header section{
 /*Partie du css de la formation*/
 
 #Formation{
+    grid-row: 3;
+    grid-column: 1;
     display: block;
     font-family: Roboto, sans-serif;
     margin-left: 1.2em;
@@ -135,16 +145,17 @@ header section{
 
 #Formation h2{
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1.2em;
     text-decoration:underline;
 }
+ 
+/*organisation BUT*/
 
 #BUT_info{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 16% 14% 14% 1fr 14%;
-    margin-bottom: 2.5em;
-    
+    margin-bottom: 2.5em;  
 }
 
 #date_but{
@@ -162,6 +173,8 @@ header section{
     color: salmon;
     
 }
+
+/*organisation BAC*/
 
 #Bac_Generale{
     display: grid;
@@ -189,9 +202,11 @@ header section{
     text-align: end;
 }
 
-#lien_seconde{
+#lieu_seconde{
     font-weight: bold;
 }
+
+/*trait séparateur */
 
 #trait_grid_gauche_2{
     grid-row: 4;
@@ -200,7 +215,7 @@ header section{
     background-color: black;
     height: 3px;
     width: 15em;
-    margin:auto;
+    margin: auto;
 }
 
 #trait_grid_gauche_2 hr{
@@ -208,6 +223,79 @@ header section{
 }
 
 
+/*Partie Expérience Professionnelle*/
+
+#Expérience_professionnelle{
+    grid-row: 5;
+    grid-column: 1;
+    display: block;
+    font-family: Roboto, sans-serif;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+#Expérience_professionnelle h2{
+    text-align: center;
+    margin-bottom: 1.2em;
+    text-decoration:underline;
+}
+
+#crous{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20% 20% 25%;
+    margin-bottom: 4em;
+}
+
+#date_crous{
+    text-align: end;
+}
+
+#lieu_crous{
+    font-weight: bold;
+}
+
+#relais_h{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:20% 20% 20% 25%;
+}
+
+#date_relais{
+    text-align: end;
+}
+
+#lieu_relais{
+    font-weight: bold;
+}
+
+/* separateur verticale*/
+
+#ligne_verticale{
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    background-color: orange;
+    height: 6px;
+    width: 22em;
+    margin:auto;
+}
+
+#ligne_verticale hr{
+    border: none;
+}
+
+
+/*
+version barre horizontale
+    height:100vh;
+    width:.5vw;
+    border-width:0;
+    color:#000;
+    background-color:#000;
+    margin-left: 5em;
+
+*/
 
 @media(min-width:768px){
 
