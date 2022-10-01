@@ -5,13 +5,19 @@
 
 /*CSS pour L'header*/
 
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
 header{
     display: grid;
     grid-template-columns: 30% 1fr ;
     grid-template-rows: 40% 10% 10% 10% 10% 10%;
     background-color: rgb(49,56,70);
     margin-bottom: 1em;
-    height: 50vh;
+    height: 60vh;
     color: white;
 }
 
