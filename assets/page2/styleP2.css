@@ -12,31 +12,33 @@ header{
     background-image: url(fond.jpg);
     background-size: cover;
     background-position: 20%;
-    color: rgb(95, 94, 166);   
+    color:white;
+    text-shadow: black 2px 2px 0.13em;   
     font-family: Cabin, sans-serif;
     
 }
 
 .header-title{
     grid-row: 1;
-    grid-column: 1;
-    text-align: left;
+    grid-column: 2;
+    text-align: right;
     padding: 3%;
     font-weight: bold;
     font-size: 300%;
     text-decoration: underline;
-    margin-left: 1em;
+    margin-right: 0.8em;
     
 }
 .nav-title{
     grid-row: 1;
-    grid-column: 2; 
-    text-align: end;
+    grid-column: 1; 
+    text-align: left;
+    margin-left: 4em;
 }
 
 .nav-title a{
     text-decoration: none;
-    color: rgb(95, 94, 166);
+    color: white;
     font-size: 300%;
     font-weight: bold;
     text-decoration: underline;
@@ -53,8 +55,7 @@ header section{
     text-align: center;
     height: 100%;
     font-size: 200%;
-    color:white;
-    text-shadow: black 2px 2px 0.13em;
+
     align-items: center;
 }
 header section h1{
@@ -74,50 +75,52 @@ header section span{
 main{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
 }
 
-main article{
+#article1{
+    grid-row: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding-left: 5vh
+    grid-template-columns: 1fr;
+    margin-bottom: 10em;
+    margin-top: 5em;
 }
 
-main > article > section{
-    padding: 15%;
+#article1 h2{
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 1.5em;
 }
 
-main form{
+#article1 p{
+    margin-right: 5em;
+    margin-bottom: 2em;
+}
+
+#but1{
+    align-self: end;
+}
+
+#article2{
+    grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr;
 }
 
-main > form > span{
-    margin-left: 50%;
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
+#article3{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-main > form > button{
-    margin-right: 30%;
-    margin-left: 20%;
-}
 
-input:focus{
-    outline: 3px dotted hotpink;
-}
 
-@media screen and (max-width: 980px) {
-    body {
-      background-color:gray;
-    }
-
+@media(min-width:768px) {
+    
     main article{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         padding-left: 5vh
     }
