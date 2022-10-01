@@ -19,6 +19,7 @@ header{
     margin-bottom: 1em;
     height: 60vh;
     color: white;
+    font-family: Cabin, sans-serif;
 }
 
 #pp{
@@ -34,7 +35,6 @@ header{
     justify-self: center;
     align-self: center;
     font-size: 110%; 
-    font-family: Cabin, sans-serif;
 }
 
 header section img{
@@ -79,7 +79,7 @@ header section{
 }
 
 #info_linkedin a{
-    text-decoration:none;
+    text-decoration: underline;
     color: rgb(151, 155, 162);
 }
 
@@ -291,17 +291,6 @@ main{
     border: none;
 }
 
-/*
-version barre horizontale
-    height:100vh;
-    width:.5vw;
-    border-width:0;
-    color:#000;
-    background-color:#000;
-    margin-left: 5em;
-
-*/
-
 /*mise en place de la grille du coté droit*/
 
 #cote_droit{
@@ -420,6 +409,8 @@ version barre horizontale
 
 #Langues h2{
     text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1.5em;
 }
 
 #Angl{
@@ -465,6 +456,7 @@ version barre horizontale
 #Centres_inter h2{
     text-align: center;
     margin-bottom: 1em;
+    text-decoration: underline;
 }
 
 #Centres_inter ul li{
@@ -486,8 +478,7 @@ version barre horizontale
         grid-template-rows: 40% 12% 12% 12% 12% 12%;
         background-color: rgb(49,56,70);
         margin-bottom: 1em;
-        height: 60vh;
-        color: white;
+        height: 70vh;
     }
     
     #pp{
@@ -513,5 +504,73 @@ version barre horizontale
         justify-self: center;
     }
 
+    /* css du main version pc */
+    main{
+        grid-template-columns: 1fr 10% 1fr;
+        grid-template-rows: auto;
+        font-size: 140%;
+        margin-left: 3em;
+        
+    }
 
+    #Demande_de_Stage h2{
+        margin-bottom: 5em;
+    }
+
+    /* separateur verticale*/
+
+    #ligne_verticale{
+        grid-row: 1;
+        grid-column: 2;
+        height:230vh;
+        width:.30em;
+        border-width:0;
+        color:salmon;
+        background-color:salmon;
+    }
+    
+    #cote_droit{
+        grid-row: 1;
+        grid-column: 3;
+        grid-template-rows: 15% 10% 20% 10% 12% 10% 25%;
+    }
+
+    #Metier h2{
+        margin-bottom: 2em;
+    }
+
+    #Sociale h2{
+        margin-bottom: 2em;
+    }
+
+    #Centres_inter h2{
+        margin-bottom: 1em;
+    }
+
+    #trait_grid_gauche_1{
+        height: 5px;
+        width: 25em;
+    }
+    #trait_grid_gauche_2{
+        height: 5px;
+        width: 25em;
+    }
+
+    #trait_grid_droit_1{
+        height: 5px;
+        width: 25em;
+    }
+    #trait_grid_gauche_2{
+        height: 5px;
+        width: 25em;
+    }
+    #trait_grid_gauche_3{
+        height: 5px;
+        width: 25em;
+    }
+
+    /* Décoration */
+    #info_linkedin a:hover{
+        color: salmon;
+    }
 }
