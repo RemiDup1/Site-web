@@ -128,7 +128,7 @@ main{
     grid-row: 2;
     grid-column: 1;
     align-self: center;
-    background-color: black;
+    background-color: salmon;
     height: 3px;
     width: 15em;
     margin:auto;
@@ -218,7 +218,7 @@ main{
     grid-row: 4;
     grid-column: 1;
     align-self: center;
-    background-color: black;
+    background-color: salmon;
     height: 3px;
     width: 15em;
     margin: auto;
@@ -341,7 +341,7 @@ main{
     grid-row: 2;
     grid-column: 1;
     align-self: center;
-    background-color: black;
+    background-color: salmon;
     height: 3px;
     width: 15em;
     margin:auto;
@@ -386,7 +386,7 @@ main{
     grid-row: 4;
     grid-column: 1;
     align-self: center;
-    background-color: black;
+    background-color: salmon;
     height: 3px;
     width: 15em;
     margin:auto;
@@ -433,7 +433,7 @@ main{
     grid-row: 6;
     grid-column: 1;
     align-self: center;
-    background-color: black;
+    background-color: salmon;
     height: 3px;
     width: 15em;
     margin:auto;
@@ -560,11 +560,11 @@ main{
         height: 5px;
         width: 25em;
     }
-    #trait_grid_gauche_2{
+    #trait_grid_droit_2{
         height: 5px;
         width: 25em;
     }
-    #trait_grid_gauche_3{
+    #trait_grid_droit_3{
         height: 5px;
         width: 25em;
     }
