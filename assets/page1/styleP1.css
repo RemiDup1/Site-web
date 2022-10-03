@@ -471,7 +471,7 @@ main{
 
 
 
-@media(min-width:768px){
+@media(min-width:1000px){
 
     header{
         grid-template-rows: 40% 12% 12% 12% 12% 12%;
