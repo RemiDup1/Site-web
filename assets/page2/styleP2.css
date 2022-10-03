@@ -12,9 +12,9 @@ header{
     background-image: url(fond.jpg);
     background-size: cover;
     background-position: 20%;
-    color:white;
-    text-shadow: black 2px 2px 0.13em;   
+    color: rgb(95, 94, 166);   
     font-family: Cabin, sans-serif;
+    text-shadow: black 2px 2px 0.13em;
     
 }
 
@@ -26,19 +26,19 @@ header{
     font-weight: bold;
     font-size: 300%;
     text-decoration: underline;
-    margin-right: 0.8em;
+    margin-right: 2em;
     
 }
 .nav-title{
     grid-row: 1;
     grid-column: 1; 
-    text-align: left;
-    margin-left: 4em;
+    text-align: start;
+    margin-left: 3em;
 }
 
 .nav-title a{
     text-decoration: none;
-    color: white;
+    color: rgb(95, 94, 166);
     font-size: 300%;
     font-weight: bold;
     text-decoration: underline;
@@ -55,7 +55,8 @@ header section{
     text-align: center;
     height: 100%;
     font-size: 200%;
-
+    color:white;
+    
     align-items: center;
 }
 header section h1{
@@ -75,54 +76,56 @@ header section span{
 main{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
     align-items: center;
 }
 
-#article1{
-    grid-row: 1;
+main article{
     display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 10em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-left: 5vh;
+    font-family: Cabin, sans-serif;
+}
+
+main > article > section{
+    margin-bottom: 3em;
     margin-top: 5em;
-}
-
-#article1 h2{
-    font-size: 300%;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-#article1 p{
+    margin-left: 5em;
     margin-right: 5em;
-    margin-bottom: 2em;
 }
 
 #but1{
-    align-self: end;
+    margin-top: 1em;
+    width: 20em;
+    height: 3em;
+    font-size: 180%;
+    font-weight: bold;
 }
 
-#article2{
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr;
+#img1{
+    width: 35em;
+    height: auto ;
 }
 
-#article3{
-    grid-row: 3;
-    display: grid;
-    grid-template-columns: 1fr;
+#img2{
+    width: 40em;
+    height: auto ;
 }
 
+#img3{
+    width: 40em;
+    height: auto ;
+}
 
-
-@media(min-width:768px) {
+@media screen and (max-width: 980px) {
     
     main article{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         align-items: center;
-        padding-left: 5vh
+        padding-left: 5vh;
+
     }
 
 
